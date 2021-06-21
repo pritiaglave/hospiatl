@@ -1,0 +1,20 @@
+.nav-link:hover{
+    color: gold !important;
+    background-color: rgb(166, 139, 230);
+    border-radius: 10px;
+}
+
+.navbar-brand:hover{
+    color: #70afe9 !important;
+    font-weight: bold;
+}
+
+.rounded{
+    border-top: 8px solid rgba(240, 128, 128, 0.692);
+    border-radius: 5px;
+}
+
+.mydivstyle:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}

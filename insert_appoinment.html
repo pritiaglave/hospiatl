@@ -1,0 +1,35 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{%  block body %} 
+
+
+
+<div class="container">
+    <h2 class="text-center" style="color: crimson; font-weight: bold;">Appoinment Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Doctor</label>
+        <select name="doctor" class="form-control" >
+            {% for i in doctor1 %}
+            <option value="{{i.name}}">{{i.name}}</option>
+        {% endfor %}
+        <label>patiant</label>
+        <select name="patient" class="form-control" >
+            {% for i in patient1 %}
+            <option value="{{i.name}}">{{i.name}}</option>
+        {% endfor %}    
+        </select>
+
+
+        <label>Date</label>
+        <input type = "date" class="form-control" name="date1" required>
+        
+        <label>Time</label>
+        <input type = "time" class="form-control" name="time1" required>
+        
+        
+        <br><br>
+        <input type="submit" value="login" class="form-control btn btn-primary">
+    </form>
+</div>
+{%  endblock %} 

@@ -1,0 +1,21 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container" style="margin-top: 50px;">
+<h2 class="text-center" style="color: crimson; font-weight: bold;">Update Patient Details</h2>
+<hr class="rounded">
+<br>
+<div class="container" align="center">
+<form action="" method="POST">
+    {% csrf_token %}
+    Name:<input type="text" name="name" id="" value="{{update_data.name}}"><br><br>
+    Gender:<input type="text" name="gender" id="" value="{{update_data.gender}}"><br><br>
+    Contact:<input type="text" name="mobile" id="" value="{{update_data.mobile}}"><br><br>
+    <Address></Address>:<input type="text" name="address" id="" value="{{update_data.address}}"><br><br>
+    <input type="submit" name="" value="Update" id="">
+
+</div>
+</div>
+
+{% endblock %}

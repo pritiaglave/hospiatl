@@ -1,0 +1,23 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container" style="margin-top: 50px;">
+<h2 class="text-center" style="color: crimson; font-weight: bold;"> Book Appoinment</h2>
+
+
+<hr class="rounded">
+<br>
+<div class="coantainer" align="center">
+
+<form accept="" method="POST">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" name="" id="">
+</form>
+    
+
+
+</div>
+</div>
+{% endblock  %}

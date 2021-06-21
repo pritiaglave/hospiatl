@@ -1,0 +1,33 @@
+{% extends 'navbar.html' %}
+ {% load static %}
+{% block body %}
+<div class="container" style="margin-top:50px;">
+<h2 class="text-center">Admin Dashboard</h2>  
+<br><br><br><br><br>  
+<div class="row">
+    <div class="col-sm-4 text-center mydivstyle">
+        <h2 style="color: rgb(255, 0, 21);">{{d}}</h2>
+        <a href="/view_doctor"><h4 style="color: red;"></h4>Doctors<h4></h4>
+
+        <hr class="rounded"></a>
+        <img src="data:image/jpeg;base64,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" alt="Girl in a jacket" width="200" height="200">
+        
+    </div>
+    <div class="col-sm-4 text-center mydivstyle">
+        <h2 style="color: rgb(255, 0, 43);">{{p}}</h2>
+        <a href="/view_patient"><h4 style="color: red;"></h4>Patients</h4><hr class="rounded"></a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0Z72lrVXLDMP6o9fpncywPCdzgGgpBvroA&usqp=CAU" alt="Girl in a jacket" width="200" height="200">
+    </div>
+    <div class="col-sm-4 text-center mydivstyle">
+        <h2 style="color: rgb(255, 0, 0);">{{a}}</h2>
+        <a href="/view_appoinment"><h4 style="color: red;"></h4>Appoinments</h><hr class="rounded">
+            
+        </a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5O0qS4oMCT5YE-coyXX7oK5D_NSFADlMo3g&usqp=CAU" alt="Girl in a jacket" width="200" height="200">
+        </div>
+
+
+</div>
+
+</div>
+{% endblock %}
